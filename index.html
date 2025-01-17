@@ -1,96 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Management</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+}
+
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+table td button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table td button:hover {
+    background-color: #c82333;
+}
+
+/* Responsif: Scroll horizontal pada tabel */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .btn-custom {
+        font-size: 1rem;
+    }
+
+    table th,
+    table td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    /* Menambahkan scroll horizontal pada tabel */
+    .card table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>License Management for Blogger</h2>
+
+        <div class="card">
+            <div class="card-header">
+                Add License
+            </div>
+            <form id="licenseForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="domain">Domain</label>
+                    <input type="text" id="domain" placeholder="Domain (e.g., example.com)" required>
+                </div>
+                <div class="form-group">
+                    <label for="blogId">Blog ID</label>
+                    <input type="text" id="blogId" placeholder="Blog ID" required>
+                </div>
+                <button type="submit" class="btn-custom">Add License</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Registered Licenses
+            </div>
+            <table id="licenseTbl">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Email</th>
+                        <th>Domain</th>
+                        <th>Blog ID</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        import { getDatabase, ref, set, push, remove, onValue } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
+
+        // Firebase Config
+        const firebaseConfig = {
+            apiKey: "AIzaSyBlFx0QzlBWxWTfFzBWteGOPR4tl6YzOq0",
+            authDomain: "license-55cd0.firebaseapp.com",
+            databaseURL: "https://license-55cd0-default-rtdb.firebaseio.com",
+            projectId: "license-55cd0",
+            storageBucket: "license-55cd0.firebasestorage.app",
+            messagingSenderId: "29025651569",
+            appId: "1:29025651569:web:a4f961bfd3d310ee2e04d0"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+
+        // Add License Data
+        document.getElementById("licenseForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+            const email = document.getElementById("email").value.trim();
+            const domain = document.getElementById("domain").value.trim();
+            const blogId = document.getElementById("blogId").value.trim();
+
+            if (!email || !domain || !blogId) {
+                alert("All fields are required!");
+                return;
+            }
+
+            const licenseId = push(ref(database, "licenses")).key;
+            set(ref(database, `licenses/${licenseId}`), {
+                email,
+                domain,
+                blogId
+            })
+                .then(() => {
+                    alert("License added successfully!");
+                    document.getElementById("licenseForm").reset();
+                })
+                .catch((error) => {
+                    alert("Error: " + error.message);
+                });
+        });
+
+        // Automatically Fetch and Display Licenses
+        const tableBody = document.querySelector("#licenseTbl tbody");
+        const dbRef = ref(database, "licenses");
+
+        onValue(dbRef, (snapshot) => {
+            tableBody.innerHTML = ""; // Clear the table before loading new data
+
+            if (!snapshot.exists()) {
+                tableBody.innerHTML = `
+                    <tr>
+                        <td colspan="5" class="text-center">No licenses available.</td>
+                    </tr>
+                `;
+                return;
+            }
+
+            let rowNum = 0;
+            snapshot.forEach((childSnapshot) => {
+                const data = childSnapshot.val();
+                const licenseId = childSnapshot.key;
+                rowNum++;
+
+                const row = `
+                    <tr>
+                        <td>${rowNum}</td>
+                        <td>${data.email}</td>
+                        <td>${data.domain}</td>
+                        <td>${data.blogId}</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm delete-btn" data-id="${licenseId}">Delete</button>
+                        </td>
+                    </tr>
+                `;
+
+                tableBody.insertAdjacentHTML("beforeend", row);
+            });
+
+            // Attach Delete Event Listeners to Delete Buttons
+            document.querySelectorAll(".delete-btn").forEach((button) => {
+                button.addEventListener("click", (e) => {
+                    const licenseId = e.target.getAttribute("data-id");
+                    deleteLicense(licenseId);
+                });
+            });
+        });
+
+        // Delete License Function
+        function deleteLicense(licenseId) {
+            if (confirm("Are you sure you want to delete this license?")) {
+                remove(ref(database, `licenses/${licenseId}`))
+                    .then(() => {
+                        alert("License deleted successfully!");
+                    })
+                    .catch((error) => {
+                        alert("Error: " + error.message);
+                    });
+            }
+        }
+    </script>
+</body>
+
 </html>
